@@ -8,7 +8,7 @@ function BoilingVerdict(props) {
     return <p>The water would not boil.</p>;
 }
 
-function convert(temperature, convert) {
+function tryConvert(temperature, convert) {
     const input = parseFloat(temperature);
     if (Number.isNaN(input)) {
         return '';
@@ -52,8 +52,8 @@ class Calculator extends React.Component {
     render() {
         const temperature = this.state.temperature;
         const scale = this.state.scale;
-        const celsius = scale === 'f' ? convert(temperature, toCelsius) : temperature;
-        const fahrenheit  = scale === 'c' ? convert(temperature, toFahrenheit) : temperature;
+        const celsius = scale === 'f' ? tryConvert(temperature, toCelsius) : temperature;
+        const fahrenheit  = scale === 'c' ? tryConvert(temperature, toFahrenheit) : temperature;
         
         return (
             <div>
