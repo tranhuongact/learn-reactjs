@@ -6,6 +6,7 @@ import LifeCycle from './LifeCycle';
 import Toggle from './Toggle';
 import Array from './Array';
 import Form from './Form';
+import Calculator from './Calculator';
 
 
 function ActionLink(){
@@ -48,6 +49,9 @@ class App extends React.Component {
         <Array numbers={numbers} />
         <hr/>
         <Form />
+        <hr/>
+        <h2>Lifting state up</h2>
+        <Calculator />
       </div>
     )
   }
