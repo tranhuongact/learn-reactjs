@@ -9,6 +9,7 @@ import Form from './Form';
 import Greeting from './Greeting';
 import LoginControl from './LoginControl';
 import FilterableProductTable from './thinking/FilterableProductTable';
+import Calculator from './Calculator';
 
 
 function ActionLink(){
@@ -55,6 +56,9 @@ class App extends React.Component {
         <Array numbers={numbers} />
         <hr/>
         <Form />
+        <hr/>
+        <h2>Lifting state up</h2>
+        <Calculator />
         <hr/>
         <FilterableProductTable />
       </div>
