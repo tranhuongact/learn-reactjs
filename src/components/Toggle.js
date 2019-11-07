@@ -10,7 +10,7 @@ class Toggle extends Component {
 
     handleClick = () => {
         this.setState((state) => ({
-            toggle: !this.state.toggle
+            toggle: !state.toggle
         })
         )
     }

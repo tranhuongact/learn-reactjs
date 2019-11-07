@@ -6,6 +6,9 @@ import LifeCycle from './LifeCycle';
 import Toggle from './Toggle';
 import Array from './Array';
 import Form from './Form';
+import Greeting from './Greeting';
+import LoginControl from './LoginControl';
+import FilterableProductTable from './thinking/FilterableProductTable';
 
 
 function ActionLink(){
@@ -44,10 +47,16 @@ class App extends React.Component {
         <ActionLink />
         <Toggle />
         <hr/>
+        <h2>Conditional rendering</h2>
+        <Greeting isLoggin={true} />
+        <LoginControl />
+        <hr/>
         <h2>List</h2>
         <Array numbers={numbers} />
         <hr/>
         <Form />
+        <hr/>
+        <FilterableProductTable />
       </div>
     )
   }
