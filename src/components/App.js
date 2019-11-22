@@ -10,6 +10,7 @@ import Greeting from './Greeting';
 import LoginControl from './LoginControl';
 import FilterableProductTable from './thinking/FilterableProductTable';
 import Calculator from './Calculator';
+import ToDolist from './ToDoList';
 
 
 function ActionLink(){
@@ -61,6 +62,8 @@ class App extends React.Component {
         <Calculator />
         <hr/>
         <FilterableProductTable />
+        <hr/>
+        <ToDolist />
       </div>
     )
   }
