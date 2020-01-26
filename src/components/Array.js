@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 function NumberList(props) {
     const numbers = props.numbers;
@@ -11,9 +11,6 @@ function NumberList(props) {
 }
 
 class Array extends React.Component {
-    constructor(props){
-        super(props);
-    }
     render() {
         return (
             <NumberList numbers={this.props.numbers} />

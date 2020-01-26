@@ -21,10 +21,6 @@ class LifeCycle extends Component {
         })
     }
 
-    componentWillMount() {
-        console.log("LifeCycle Will Mount");
-    }
-
     componentDidMount() {
         console.log("LifeCycle Did Mount");
         this.setState({
@@ -32,17 +28,14 @@ class LifeCycle extends Component {
         })
     }
 
-    componentWillReceiveProps(nextProps) {
-        console.log("LifeCycle Will Mount");
+    static getDerivedStateFromProps(props, state) {
+        console.log("getDerivedStateFromProps", state);
+        return null;
     }
 
     shouldComponentUpdate(nextProps, nextState) {
         console.log("LifeCycle shouldComponentUpdate");
         return true;
-    }
-
-    componentWillUpdate(nextProps, nextState) {
-        console.log("LifeCycle Will Update");
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -54,7 +47,6 @@ class LifeCycle extends Component {
     }
 
     render() {
-        console.log("LifeCycle render");
         var myStyle = {
             color: 'green',
             fontSize : 18

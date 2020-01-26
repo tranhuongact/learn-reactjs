@@ -6,9 +6,6 @@ const scaleNames = {
 }
 
 class TemperatureInput extends Component {
-    constructor(props){
-        super(props);
-    }
 
     handleChange = (e) => {
         this.props.onTemperatureChange(e.target.value);
